@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatelessWidget {
   final String title;
-  const MyHomePage({super.key, required this.title});  
+  const MyHomePage({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
@@ -33,8 +33,15 @@ class MyHomePage extends StatelessWidget {
         title: Text(title),
       ),
       body: Center(
-        child: Text(
-          'Hello, World!',
+        child: Column(
+          children: [
+            Text(
+              'Hello, World!',
+            ),
+            Text(
+              'Hello, World!',
+            ),
+          ],
         ),
       ),
     );
